@@ -29,13 +29,12 @@ db.mongoose
     process.exit();
   });
 
-// // simple route
-// app.get("/", (req, res) => {
-//   res.json({ message: "Welcome to bezkoder application." });
-// });
-
-require("./app/routes/turorial.routes")(app);
-// app.use("/api/tutorials", require("./app/routes/turorial.routes"));
+require("./app/routes/actualite.routes")(app);
+require("./app/routes/product.routes")(app);
+require("./app/routes/user.routes")(app);
+require("./app/routes/userregistration")(app);
+require("./app/routes/user.login")(app);
+app.use("/images", express.static("./images_uploaded"));
 
 // set port, listen for requests
 const PORT = process.env.PORT || 5000;
