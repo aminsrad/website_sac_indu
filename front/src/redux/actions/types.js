@@ -1,0 +1,6 @@
+export const GET_ACTUALITE = "GET_ACTUALITE";
+export const GET_PRODUCT = "GET_PRODUCT";
+export const CREATE_ACTUALITE = "CREATE_ACTUALITE";
+export const CREATE_PRODUCT = "CREATE_PRODUCT";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGOUT = "LOGOUT";
